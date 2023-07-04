@@ -17,12 +17,9 @@ The library provides a layer of simplicity, making it easier for developers to c
 ## Why choose three.js?
 Here are the main reasons why developers prefer three.js for 3D web graphics:
 
-- Simplicity: three.js abstracts much of the complexity of WebGL, making it easier for developers to create stunning 3D graphics with simpler, easier-to-   understand code.
-- Documentation and Community: The library has extensive documentation and a large, supportive community, making it easier for developers to learn and 
-  solve issues they encounter.
-- Versatility and Features: three.js supports a wide range of features, including various lighting and shadowing techniques, shaders, post-processing 
-  effects, and animations, among others. It allows developers to create a wide variety of 3D objects and scenes, from simple geometric shapes to complex 
-  models and environments.
+- Simplicity: three.js abstracts much of the complexity of WebGL, making it easier for developers to create stunning 3D graphics with simpler, easier-to- understand code.
+- Documentation and Community: The library has extensive documentation and a large, supportive community, making it easier for developers to learn and solve issues they encounter.
+- Versatility and Features: three.js supports a wide range of features, including various lighting and shadowing techniques, shaders, post-processing effects, and animations, among others. It allows developers to create a wide variety of 3D objects and scenes, from simple geometric shapes to complex models and environments.
 
 ## Core Concepts in three.js
 To get started with three.js, it is crucial to understand its core concepts:
@@ -34,3 +31,47 @@ To get started with three.js, it is crucial to understand its core concepts:
 5. Materials: These are used to define the appearance of the geometry in terms of color, texture, shininess, and how it responds to light.
 6. Light: Light in a three.js scene mimics the behavior of light in the real world. Different types of light sources such as AmbientLight, DirectionalLight, PointLight, and SpotLight can be used to achieve various lighting effects.
 7. Animation: Three.js provides the ability to animate 3D objects, whether that's moving a camera, changing the properties of a material over time, or any number of other possibilities.
+
+## Example Code in three.js
+```js
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+
+var geometry = new THREE.BoxGeometry(1, 1, 1);
+var material = new THREE.MeshPhongMaterial({color: 0x00ff00});
+var cube = new THREE.Mesh(geometry, material);
+scene.add(cube);
+
+var light = new THREE.PointLight(0xFFFFFF, 1, 1000);
+light.position.set(10, 10, 10);
+scene.add(light);
+
+camera.position.z = 5;
+
+var animate = function () {
+    requestAnimationFrame(animate);
+
+    cube.rotation.x += 0.01;
+    cube.rotation.y += 0.01;
+
+    renderer.render(scene, camera);
+};
+
+animate();
+```
+
+In this code, I added a PointLight to the scene, which creates the illusion of depth and shape on the cube.
+
+## Conclusion
+three.js is a powerful tool for creating 3D graphics in web applications. The learning curve might seem steep initially, but understanding the core concepts such as scenes, cameras, renderers, geometries, materials, lights, and animation will pave the way towards creating visually stunning and interactive 3D web applications.
+
+For more in-depth learning, the three.js documentation and the three.js fundamentals website are great resources.
+
+## Sources
+1. "Three.js - Javascript 3D Library." Three.js. https://threejs.org/
+2. "Three.js Fundamentals." Three.js Fundamentals. https://threejsfundamentals.org/
+3. "WebGL - OpenGL ES for the Web." Khronos Group. https://www.khronos.org/webgl/
