@@ -133,8 +133,8 @@ A basic modal dialog could be created as follows:
 </dialog>
 ```
 ```js
-    var dialog = document.getElementById('myDialog');
+var dialog = document.getElementById('myDialog');
     document.getElementById('closeButton').onclick = function() {
         dialog.close();
-    }
+}
 ```
