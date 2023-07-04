@@ -81,26 +81,27 @@ My research has shown me that three.js is a potent ally for anyone wishing to ve
 During my exploration of web design, I learned the importance of creating websites that aren't just visually appealing but are accessible to everyone. I discovered that in the digital world, inclusivity is just as important as aesthetics, functionality, or search engine optimization. I was inspired to write this article because of a talk I had attended which was given by Cyd Stumpel, a Front-end developer.
 
 ## Unraveling the Concept of Accessibility
-Accessibility, in the context of the web, means building websites that everyone, including people with disabilities, can use effectively. This includes people with auditory, cognitive, neurological, physical, speech, and visual impairments.
+The cornerstone of my research revolved around understanding what web accessibility means. The term refers to designing and creating websites that are inclusive, ensuring individuals with disabilities can perceive, understand, navigate, and interact with the web. It also means they can contribute to the web, a right enshrined in the Convention on the Rights of Persons with Disabilities (CRPD).
 
-I found the concept beautifully summarized by the Web Content Accessibility Guidelines (WCAG), produced by the World Wide Web Consortium (W3C). They laid out four key principles that should guide the construction of an accessible website:
+Accessibility encompasses a wide range of disabilities, including blindness and low vision, deafness and hearing loss, learning disabilities, cognitive limitations, limited movement, speech disabilities, and photosensitivity.
+I realized the importance of the Web Content Accessibility Guidelines (WCAG), a central element of web accessibility. Created by the World Wide Web Consortium (W3C), WCAG is organized around four principles known as POUR: Perceivable, Operable, Understandable, and Robust.
 
-- Perceivable: Can all users perceive the information? This principle entails providing alternatives for non-text content and ensuring that users can consume the content in various ways, such as visually or audibly.
-- Operable: Can all users use the interface and navigate the website? Websites must be fully functional using only a keyboard, and users must be given ample time to consume the content.
-- Understandable: Is the operation of the interface and the information easily understood by users? Here, the focus is on making text readable, avoiding jargon, and ensuring web pages operate predictably.
-- Robust: Can a variety of technologies interpret the content reliably? This principle encourages forward-thinking design compatible with current and future user tools, including assistive technologies.
+- Perceivable: This principle highlights that users must be able to perceive the information being presented. It can't be invisible to all of their senses. This involves providing text alternatives for non-text content, creating adaptable content, and making it distinguishable.
+- Operable: This suggests that users must be able to operate the interface and navigation. The interface cannot require interaction that a user cannot perform. This includes making all functionalities available from a keyboard, providing users enough time, not designing content in a way that is known to cause seizures, and providing navigational aids.
+- Understandable: The principle explains that users must be able to understand the information as well as the operation of the interface. The web page should not appear or operate in an unpredictable way. This involves making text readable and understandable, making web pages appear and operate in predictable ways, and helping users avoid and correct mistakes.
+- Robust: This states that users must be able to access the content as technologies advance. It ensures compatibility with current and future user tools, including assistive technologies. This involves maximizing compatibility with current and future user agents, including assistive technologies.
 
 ## Creating Accessible Websites: Key Insights from My Research
-Through my research, I've found that creating accessible websites involves several critical factors:
+Drawing from the WCAG guidelines, along with other resources, I've identified key steps and best practices to create accessible websites:
 
-- Consistent Navigation: Navigation should remain consistent throughout the website. This includes the placement of navigation bars, search bars, buttons, and links.
-- Readable Text: The text should be easy to read. This involves selecting high-contrast color combinations, readable fonts, and an appropriate text size.
-- Alternative Text for Images: All images should include alternative text (alt text) to describe the image for those who cannot see it.
-- Accessible Forms: Forms should be designed with accessibility in mind, including appropriately labeled fields and error messages that help users correct mistakes.
-- Captions and Transcripts: Videos should have captions or transcripts available. This not only aids deaf and hard of hearing users, but also those who cannot play sound due to their current environment.
-- Keyboard Accessibility: All website functionality should be available using a keyboard. This helps people who cannot use a mouse or have difficulty with fine motor skills.
-- Avoidance of Flashing Content: Flashing content can trigger seizures in people with conditions like photosensitive epilepsy and should be avoided.
-- Testing: Finally, I learned that you should regularly test your website for accessibility. Tools like the WAVE Web Accessibility Evaluation Tool can help identify areas for improvement.
+- Consistent Navigation: Keeping navigation consistent throughout the website is critical. This means maintaining the placement of elements like navigation bars, buttons, and links in the same place across different pages. It helps users learn the layout of your site and find what they need more quickly.
+- Readable Text: The text should be easy to read for everyone, including people with visual impairments or learning disabilities. This involves selecting high-contrast color combinations, sans serif fonts for body text, and a minimum text size of 16 pixels.
+- Alt Text for Images: Every image should have alternative text, often known as "alt text". This text describes the content of the image and is especially useful for those who use screen readers or have slow internet connections.
+- Accessible Forms: Forms should be clearly labeled and provide clear instructions. This includes appropriately labeled fields, error identification that provides suggestions to the user to correct their input, and forms that are easily navigable using a keyboard.
+- Media Alternatives: Provide alternatives for audio and video content. Videos should include captions and transcripts, while podcasts should provide a written transcript. These considerations are helpful for those who are hard of hearing or prefer to read rather than listen.
+Keyboard Accessibility: All website functionality should be accessible using only a keyboard. This includes access to all pages, links, content, and even form inputs.
+- Avoidance of Flashing Content: Flashing content, especially those that flash more than three times per second, should be avoided as they can trigger seizures in people with photosensitive epilepsy.
+- Testing and Validation: One of the most critical steps is to test the website's accessibility. Tools like the WAVE Web Accessibility Evaluation Tool can help identify areas of improvement. Additionally, getting feedback from users with disabilities can provide real-world insights into your website's accessibility.
 
 ## Conclusion
 The journey of creating an accessible website, while challenging, is deeply rewarding. It has broadened my understanding of web design from mere aesthetics to a more inclusive and holistic approach. Although making a site accessible might require additional effort, it ensures that everyone can benefit from the information and services provided, which, in my eyes, is a mark of true success in the digital landscape.
@@ -109,3 +110,7 @@ The journey of creating an accessible website, while challenging, is deeply rewa
 - "Web Content Accessibility Guidelines (WCAG) Overview." W3C. https://www.w3.org/WAI/standards-guidelines/wcag/
 - "Introduction to Web Accessibility." Web Accessibility Initiative. https://www.w3.org/WAI/fundamentals/accessibility-intro/
 - "WAVE Web Accessibility Evaluation Tool." WebAIM. https://wave.webaim.org/
+
+# Artikel 3,
+
+## Introduction 
