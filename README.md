@@ -78,7 +78,7 @@ My research has shown me that three.js is a potent ally for anyone wishing to ve
 # Artikel 2, My Research Journey into Crafting Accessible Websites
 
 ## Introduction
-During my exploration of web design, I learned the importance of creating websites that aren't just visually appealing but are accessible to everyone. I discovered that in the digital world, inclusivity is just as important as aesthetics, functionality, or search engine optimization. I was inspired to write this article because of a talk I had attended which was given by Cyd Stumpel, a Front-end developer.
+Web design is a fascinating field that combines aesthetics, functionality, and user experience. My recent foray into the world of web design has led me to an important dimension that often gets overlooked – web accessibility. The World Wide Web is an incredible resource that should be accessible to all, regardless of any physical or cognitive differences. Hence, the journey towards mastering web accessibility began. I was inspired to write this article because of a talk I had attended which was given by Cyd Stumpel, a Front-end developer.
 
 ## Unraveling the Concept of Accessibility
 The cornerstone of my research revolved around understanding what web accessibility means. The term refers to designing and creating websites that are inclusive, ensuring individuals with disabilities can perceive, understand, navigate, and interact with the web. It also means they can contribute to the web, a right enshrined in the Convention on the Rights of Persons with Disabilities (CRPD).
@@ -104,13 +104,37 @@ Keyboard Accessibility: All website functionality should be accessible using onl
 - Testing and Validation: One of the most critical steps is to test the website's accessibility. Tools like the WAVE Web Accessibility Evaluation Tool can help identify areas of improvement. Additionally, getting feedback from users with disabilities can provide real-world insights into your website's accessibility.
 
 ## Conclusion
-The journey of creating an accessible website, while challenging, is deeply rewarding. It has broadened my understanding of web design from mere aesthetics to a more inclusive and holistic approach. Although making a site accessible might require additional effort, it ensures that everyone can benefit from the information and services provided, which, in my eyes, is a mark of true success in the digital landscape.
+The journey of creating an accessible website has transformed my understanding of what it means to design for the web. It goes beyond creating something visually appealing and extends to designing a space that is inclusive and accessible to all. This journey has helped me understand the role of a web designer in shaping a more inclusive digital world.
 
 ## Sources
 - "Web Content Accessibility Guidelines (WCAG) Overview." W3C. https://www.w3.org/WAI/standards-guidelines/wcag/
 - "Introduction to Web Accessibility." Web Accessibility Initiative. https://www.w3.org/WAI/fundamentals/accessibility-intro/
 - "WAVE Web Accessibility Evaluation Tool." WebAIM. https://wave.webaim.org/
 
-# Artikel 3,
+# Artikel 3, Modal Mischief & Dialog Dilemmas
 
 ## Introduction 
+Web development fascinates me, especially the creation of interactive, user-friendly elements that enhance user engagement and experience. Among these elements, the modals and dialogs stand out, prompting my in-depth exploration into their world. In simple terms, a modal or dialog is a window that pops up on a webpage, prompting users to interact with it while pausing other activities on the page. I was inspired to write this article by a talk by Hidde de Vries, who has worked for W3C and Mozilla. 
+
+## Modals and Dialogs: What are they? 
+While undertaking my research, it became evident that modals and dialogs often confused many, mainly due to their similar appearance and functionality. However, despite their shared attributes, they serve different purposes. A modal typically displays self-contained content, like a form or set of information, separate from the main content. It requires users to interact with it before they can return to the main content.
+
+On the other hand, a dialog box, often used interchangeably with a modal, serves to provide notifications or additional information to the user, seek user confirmation, or capture brief input. The primary distinction lies in their interaction pattern: dialogs can be modal (requiring immediate interaction) or non-modal (allowing interaction with the rest of the page).
+
+## The HTML <dialog> element: A Deeper Dive
+As part of my research, I delved into the HTML <dialog> element, a native solution for creating modals and dialogs in HTML5. The <dialog> element makes it straightforward to create popup dialogs and modals on a web page.
+
+A basic modal dialog could be created as follows:
+
+```html
+<dialog id="myDialog">
+    <p>This is a simple dialog.</p>
+    <button id="closeButton">Close</button>
+</dialog>
+```
+```js
+    var dialog = document.getElementById('myDialog');
+    document.getElementById('closeButton').onclick = function() {
+        dialog.close();
+    }
+```
