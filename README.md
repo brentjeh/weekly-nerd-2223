@@ -22,4 +22,15 @@ Here are the main reasons why developers prefer three.js for 3D web graphics:
   solve issues they encounter.
 - Versatility and Features: three.js supports a wide range of features, including various lighting and shadowing techniques, shaders, post-processing 
   effects, and animations, among others. It allows developers to create a wide variety of 3D objects and scenes, from simple geometric shapes to complex 
-  models and environments.****
+  models and environments.
+
+## Core Concepts in three.js
+To get started with three.js, it is crucial to understand its core concepts:
+
+1. Scene: This acts as the world or stage where all 3D objects exist. It's like the universe that houses everything that you want to render.
+2. Camera: The camera is the viewpoint from which the scene is observed. By moving the camera, developers can change the perspective from which 3D objects are viewed.
+3. Renderer: This is the component that takes the scene and the camera and paints the final image onto the web page.
+4. Geometry: This represents the shape of 3D objects. Geometries can be as simple as a box or a sphere, or they can be complex models imported from a 3D modeling software.
+5. Materials: These are used to define the appearance of the geometry in terms of color, texture, shininess, and how it responds to light.
+6. Light: Light in a three.js scene mimics the behavior of light in the real world. Different types of light sources such as AmbientLight, DirectionalLight, PointLight, and SpotLight can be used to achieve various lighting effects.
+7. Animation: Three.js provides the ability to animate 3D objects, whether that's moving a camera, changing the properties of a material over time, or any number of other possibilities.
