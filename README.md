@@ -71,9 +71,9 @@ In this example, I added a PointLight to the scene, which gave the cube an illus
 My research has shown me that three.js is a potent ally for anyone wishing to venture into the realm of 3D web graphics. There may be a steep hill to climb at first, but with patience and a grasp of the core concepts, the peak is certainly reachable! For anyone wishing to embark on this journey, I highly recommend the three.js documentation and the three.js fundamentals website as invaluable guides.
 
 ## Sources
-1. "Three.js - Javascript 3D Library." Three.js. https://threejs.org/
-2. "Three.js Fundamentals." Three.js Fundamentals. https://threejsfundamentals.org/
-3. "WebGL - OpenGL ES for the Web." Khronos Group. https://www.khronos.org/webgl/
+- "Three.js - Javascript 3D Library." Three.js. https://threejs.org/
+- "Three.js Fundamentals." Three.js Fundamentals. https://threejsfundamentals.org/
+- "WebGL - OpenGL ES for the Web." Khronos Group. https://www.khronos.org/webgl/
 
 # Artikel 2, My Research Journey into Crafting Accessible Websites
 
@@ -101,3 +101,11 @@ Through my research, I've found that creating accessible websites involves sever
 - Keyboard Accessibility: All website functionality should be available using a keyboard. This helps people who cannot use a mouse or have difficulty with fine motor skills.
 - Avoidance of Flashing Content: Flashing content can trigger seizures in people with conditions like photosensitive epilepsy and should be avoided.
 - Testing: Finally, I learned that you should regularly test your website for accessibility. Tools like the WAVE Web Accessibility Evaluation Tool can help identify areas for improvement.
+
+## Conclusion
+The journey of creating an accessible website, while challenging, is deeply rewarding. It has broadened my understanding of web design from mere aesthetics to a more inclusive and holistic approach. Although making a site accessible might require additional effort, it ensures that everyone can benefit from the information and services provided, which, in my eyes, is a mark of true success in the digital landscape.
+
+## Sources
+- "Web Content Accessibility Guidelines (WCAG) Overview." W3C. https://www.w3.org/WAI/standards-guidelines/wcag/
+- "Introduction to Web Accessibility." Web Accessibility Initiative. https://www.w3.org/WAI/fundamentals/accessibility-intro/
+- "WAVE Web Accessibility Evaluation Tool." WebAIM. https://wave.webaim.org/
