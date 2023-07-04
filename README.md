@@ -127,14 +127,29 @@ As part of my research, I delved into the HTML <dialog> element, a native soluti
 A basic modal dialog could be created as follows:
 
 ```html
-<dialog id="myDialog">
-    <p>This is a simple dialog.</p>
-    <button id="closeButton">Close</button>
+<dialog open>
+  <p>Greetings, one and all!</p>
+  <form method="dialog">
+    <button>OK</button>
+  </form>
 </dialog>
 ```
-```js
-var dialog = document.getElementById('myDialog');
-    document.getElementById('closeButton').onclick = function() {
-        dialog.close();
-}
-```
+Code from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog?retiredLocale=nl.
+
+Here, we create a <dialog> with some text and a button to close it. 
+
+## Accessibility in Modals and Dialogs
+While exploring these features, it became apparent how crucial accessibility is in creating modals and dialogs. It involves ensuring the dialog is accessible to everyone, including those using keyboard navigation or screen readers. Some best practices include:
+
+- Focus Management: When a dialog opens, the focus should move to it. Similarly, when it closes, the focus should return to the previously focused element.
+- Keyboard Interaction: The dialog should be dismissible using the Esc key, and the Tab key should not focus elements outside an open dialog.
+- Role and State Indication: The dialog element should have the appropriate role ('dialog') and states indicated using ARIA (Accessible Rich Internet Applications) properties.
+
+## Conclusion
+After exploring HTML modals and dialogs, it's clear they're a versatile tool for creating interactive and engaging web interfaces. However, it's equally important to ensure that these elements are accessible to all users, fulfilling the essence of the World Wide Web – universal accessibility.
+
+## Sources
+- "The Dialog Element." MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+- "Using the HTML Dialog Element." Google Developers. https://developers.google.com/web/updates/2013/10/Dialog-Element
+- "Modal Dialog Example." W3C. https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html
+- "ARIA: dialog role." MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/dialog_role
